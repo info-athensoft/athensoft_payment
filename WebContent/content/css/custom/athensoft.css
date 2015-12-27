@@ -1,0 +1,68 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+body, p{
+	font-family: "Open Sans","Segoe UI",Arial,Helvetica,Sans-Serif;
+	font-weight: 300;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+/* general divider
+------------------------- */
+/*
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+*/
+
+h4{
+  font-size: 16px;
+}
+
+/* general divider
+------------------------- */
+
+/* modify <hr> */
+.athensoft-divider {
+  margin: 5px 0; /* Space out the Bootstrap <hr> more */
+}
+
+.athensoft-divider2 {
+  margin: 80px 0px 5px 0px; /* Space out the Bootstrap <hr> more */
+}
+
+
+/* NAV CONTENT
+-------------------------------------------------- */
+.transparent_class {
+		filter:alpha(opacity=90);
+		-moz-opacity:0.9;
+		-khtml-opacity: 0.9;
+		opacity: 0.9;
+	}
+
+
+/* BOTTOM CONTENT
+-------------------------------------------------- */
+
+/* LIST
+-------------------------------------------------- */
+div#bottom_menu ul {
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
