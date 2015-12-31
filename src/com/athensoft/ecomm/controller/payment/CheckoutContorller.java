@@ -29,7 +29,7 @@ public class CheckoutContorller {
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	@RequestMapping("/do_billing.do")	
 	public ModelAndView doBilling(HttpServletRequest request, HttpServletResponse response){
-		System.out.println("entering do_billing.do");
+		System.out.println("entering do_billing.do ...");
 		
 		ModelAndView mav = new ModelAndView();
 		String viewName = "";
@@ -95,8 +95,8 @@ public class CheckoutContorller {
 			String paymentType = (String)request.getParameter("paymentType");
 			
 			//!!!!!!!!!  to refine
-			String returnURL = "http://localhost:8080/athensoft/order_review.do";
-			String cancelURL = "http://localhost:8080/athensoft/index.jsp";
+			String returnURL = "http://localhost:8080/athensoft_payment/order_review.do";
+			String cancelURL = "http://localhost:8080/athensoft_payment/index.jsp";
 			
 			String shipToName 			= "";
 			String shipToStreet 		= "";
