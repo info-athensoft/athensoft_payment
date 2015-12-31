@@ -16,5 +16,6 @@ public class TaxRateFactory {
 	public static void main(String[] args){
 		TaxRate tr = TaxRateFactory.getTaxRate("CA");
 		System.out.println(tr.getTotalTaxRate(ProvinceCA.QUEBEC));
+		System.out.println(tr.getTotalTaxRate(ProvinceCA.ONTARIO));
 	}
 }

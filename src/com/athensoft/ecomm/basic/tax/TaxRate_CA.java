@@ -14,6 +14,9 @@ public class TaxRate_CA implements TaxRate{
 			case ProvinceCA.QUEBEC:  
 				this.totalTaxRate = getGST(provinceId)+getQST(provinceId);
 				break;
+			case ProvinceCA.ONTARIO:  
+				this.totalTaxRate = getHST(provinceId);
+				break;
 			default:
 				break;
 		}
@@ -23,7 +26,15 @@ public class TaxRate_CA implements TaxRate{
 	
 	@Override
 	public double getHST(int provinceId){
-		return 0;
+		double HST = 0;
+		switch(provinceId){
+		case ProvinceCA.ONTARIO:  
+			HST = 0.13;
+			break;
+		default:
+			break;
+	}
+		return HST;
 	}
 	
 	@Override

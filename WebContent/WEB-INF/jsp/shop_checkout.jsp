@@ -105,27 +105,27 @@
 			  <table class="table">
 			   	<tr>
 			   		<td>First Name</td>
-			   		<td><input type="text" name="bill_fname" id="bill_fname" value="BuyerOne" /></td>
+			   		<td><input type="text" name="bill_fname" id="bill_fname" value="" /></td><!-- BuyerOne -->
 			   		<td>Address</td>
-			   		<td><input type="text" name="bill_addr1" id="bill_addr1" value="1 Maire-Victorin" /></td>
+			   		<td><input type="text" name="bill_addr1" id="bill_addr1" value="" /></td><!-- 1 Maire-Victorin -->
 			   	</tr>
 			   	<tr>
 			   		<td>Last Name</td>
-			   		<td><input type="text" name="bill_lname" id="bill_lname" value="Athens" /></td>
+			   		<td><input type="text" name="bill_lname" id="bill_lname" value="" /></td><!-- Athens -->
 			   		<td></td>
 			   		<td><input type="text" name="bill_addr2" id="bill_addr2" value="" /></td>
 			   	</tr>
 			   	<tr>
 			   		<td>City</td>
-			   		<td><input type="text" name="bill_city" id="bill_city" value="Toronto" /></td>
+			   		<td><input type="text" name="bill_city" id="bill_city" value="" /></td><!-- Toronto -->
 			   		<td>Province/State</td>
-			   		<td><input type="text" name="bill_prov" id="bill_prov" value="Ontario" /></td>
+			   		<td><input type="text" name="bill_prov" id="bill_prov" value="" /></td><!-- Ontario -->
 			   	</tr>
 			   	<tr>
 			   		<td>Country</td>
-			   		<td><input type="text" name="bill_country" id="bill_country" value="CA" /></td>
+			   		<td><input type="text" name="bill_country" id="bill_country" value="" /></td><!-- CA -->
 			   		<td>Postal Code/Zip Code</td>
-			   		<td><input type="text" name="bill_postal" id="bill_postal" value="M5A 1E1" /></td>
+			   		<td><input type="text" name="bill_postal" id="bill_postal" value="" /></td><!-- M5A 1E1 -->
 			   	</tr>
 			  </table>
 			</div>
@@ -138,15 +138,15 @@
 			  <table class="table">
 			   	<tr>
 			   		<td>Email Address</td>
-			   		<td><input type="text" name="bill_email" id="bill_email" value="a@b.com" /></td>
+			   		<td><input type="text" name="bill_email" id="bill_email" value="" /></td><!-- a@b.com -->
 			   		<td>Tel. number</td>
-			   		<td><input type="text" name="bill_phone" id="bill_phone" value="5148234567" /></td>
+			   		<td><input type="text" name="bill_phone" id="bill_phone" value="" /></td><!-- 5148234567 -->
 			   	</tr>
 			   	<tr>
 			   		<td>Company</td>
-			   		<td><input type="text" name="bill_company" id="bill_company" value="athensoft" /></td>
+			   		<td><input type="text" name="bill_company" id="bill_company" value="" /></td><!-- athensoft -->
 			   		<td>Fax</td>
-			   		<td><input type="text" name="bill_fax" id="bill_fax" value="5148234568" /></td>
+			   		<td><input type="text" name="bill_fax" id="bill_fax" value="" /></td><!-- 5148234568 -->
 			   	</tr>
 			  </table>
 			</div>
