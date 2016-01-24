@@ -80,8 +80,21 @@ public class CheckoutContorller {
 	    request.getSession().setAttribute("Handling_Amount", handlingAmount);
 	    request.getSession().setAttribute("Payment_Amount", paymentAmount);  //
 	    
-	    
+//
+	    System.out.println("Introduce order system here ...");
+		Map<String,ItemCart> mapProdInCart = (HashMap<String,ItemCart>)(request.getSession().getAttribute("mapProdInCart"));
+		Map<String,Boolean> mapProdInCartStat = (HashMap<String,Boolean>)(request.getSession().getAttribute("mapProdInCartStat"));
 		
+		double doubleCartSubTotal = 0.0;
+		int orderQuantity = 0;
+		Iterator<Map.Entry<String, ItemCart>> entries = mapProdInCart.entrySet().iterator();
+		while(entries.hasNext()){
+			Entry<String, ItemCart> thisEntry = (Entry<String, ItemCart>)entries.next();
+			ItemCart itemCartObj = thisEntry.getValue();
+			doubleCartSubTotal += itemCartObj.getPrice() * itemCartObj.getQty();
+			orderQuantity += itemCartObj.getQty();
+			System.out.println(itemCartObj.getItemName()+" : "+itemCartObj.getPrice()+" X "+itemCartObj.getQty()+" = "+itemCartObj.getPrice() * itemCartObj.getQty());
+		}
 		
 		if (PaymentOption.equals("PayPal")){
 			
@@ -168,8 +181,8 @@ public class CheckoutContorller {
 //				response.sendRedirect(path);
 //				response.setHeader("Connection", "close");
 				
-				Map<String,ItemCart> mapProdInCart = (HashMap<String,ItemCart>)(session.getAttribute("mapProdInCart"));
-				Map<String,Boolean> mapProdInCartStat = (HashMap<String,Boolean>)(session.getAttribute("mapProdInCartStat"));
+//				Map<String,ItemCart> mapProdInCart = (HashMap<String,ItemCart>)(session.getAttribute("mapProdInCart"));
+//				Map<String,Boolean> mapProdInCartStat = (HashMap<String,Boolean>)(session.getAttribute("mapProdInCartStat"));
 				if(mapProdInCart!=null){
 					mapProdInCart.clear();
 					mapProdInCartStat.clear();
@@ -331,8 +344,8 @@ public class CheckoutContorller {
 					//}	
 					
 					HttpSession session = request.getSession();
-					Map<String,ItemCart> mapProdInCart = (HashMap<String,ItemCart>)(session.getAttribute("mapProdInCart"));
-					Map<String,Boolean> mapProdInCartStat = (HashMap<String,Boolean>)(session.getAttribute("mapProdInCartStat"));
+//					Map<String,ItemCart> mapProdInCart = (HashMap<String,ItemCart>)(session.getAttribute("mapProdInCart"));
+//					Map<String,Boolean> mapProdInCartStat = (HashMap<String,Boolean>)(session.getAttribute("mapProdInCartStat"));
 					if(mapProdInCart!=null){
 						mapProdInCart.clear();
 						mapProdInCartStat.clear();
